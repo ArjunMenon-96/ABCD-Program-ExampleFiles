@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Day1-3/Website/style.css">
+    <title>ICT Academy of Kerala</title>
+</head>
+<body>
+    <header>
+     <div class="container">
+     <div class="branding"> ICT Academy of <span class="current">Kerala</span></div>
+     <nav>
+         <ul>
+             <li><span class="current1"><a href="index.html">HOME</span></a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="services.html">SERVICES</a></li></div>
+         </ul>
+     </nav>
+     </div>
+   </header>
+    <section >
+        <div class="container">
+                <div class="showcase">
+            <h1>
+                <span class="head">IT Life Skills and Training</span>
+            </h1>
+            <h3>
+               <span class="head2"> Building the Nations Future</span>
+            </h3>
+        </div>
+        </div>
+    </section>
+    <section id="cont"  onmouseover="chang(this)">
+        <div class="container" >
+            <div class="formblock">To be an IT Professional
+            <form action="services.html" name="form1" onsubmit="return validate()" >
+                    <input type="text" id="id1" value=""  name="id1" placeholder="Enter Email">
+                    <button>Submit</button> 
+            </form>
+        </div>
+    </div>
+</section>
+    <script> 
+                function validate() {
+                var email = document.getElementById("id1").value;
+         if(email.length<5) 
+         {
+             alert("Name must be filled out");
+             return false;
+          }
+          }
+
+          function chang(a){
+                var aid=a.id;
+                document.getElementById("aid").style.backgroundColor="red";
+                return;
+          }
+
+    </script>
+           
+<section>
+            <div class="container">
+            <div class="logo">
+          <img src="img/R.png" >
+     <h1>Data Analytics Using R</h1>
+        <p>Topics covered are:Data mining overview<br>   
+        Introduction to Data Sciences Why Big Data? introduction <br>
+        to R:An overview and features of R programming<br>
+        system. </p>
+                            
+    </div>
+                            <div class="logo">
+                          
+                                    <img src="img/moodle.png" >
+                                    <h1>Moodle</h1>
+                                    <p>This free course is designed for anybody who wants to<br>   
+                                        use the Moodle learning platform for teaching, whether <br>
+                                    it be in a school, a university, a company or just personal <br>
+                                   interest! The four-week course is also a great<br>
+                                oppurtunity to connect with the vibrant Moodle community<br>
+                            dedicated to sharing resources, ideas and anything.</p>
+                                    
+                                    
+          </div>
+          <div class="logo">
+                          
+          <img src="img/IoT.png" >
+                         <h1>Certified IoT Specialist</h1>
+    <p>Internet of Things (IOT) is one of the most disruptive<br>technology advancement in the world of IT </p>
+                                        
+                                            
+                 </div>
+      </section>
+              
+    </section>
+
+  <footer>
+            ICT Academy of Kerala, Copyright &copy; 2018
+           
+          </footer> 
+   
+     
+       
+</body>
+</html>
